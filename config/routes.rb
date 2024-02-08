@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  root 'pages#home'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  post '/create_decision', to: 'pages#create_decision'
+  get '/parse_decisions_data', to: 'pages#parse_decisions_data'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root 'pages#home'
 end

@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, {Fragment} from "react"
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import DecisionsPage from "./DecisionsPage";
 
 function App() {
-  const [count, setCount] = useState(0);
-  return (
-    <div className='mt-3 p-3 text-primary'>
-      <p>You clicked {count} times!</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-    </div>
-  );
+
+  return <Fragment>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DecisionsPage />} />
+      </Routes>
+    </BrowserRouter>
+  </Fragment>
 }
 
 export default App;
