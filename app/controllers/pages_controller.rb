@@ -1,15 +1,15 @@
 class PagesController < ApplicationController
   include HTTParty
 
+  def init_data
+    api_url = "#{ENV['CLOVERPOP_DOMAIN']}/api/v1/decisions"
+    make_api_request(api_url, :get)
+  end
+
   def create_decision
     api_url = "#{ENV['CLOVERPOP_DOMAIN']}/api/v1/decisions"
     body = { decision: params['decision'] }
     make_api_request(api_url, :post, body)
-  end
-
-  def parse_decisions_data
-    api_url = "#{ENV['CLOVERPOP_DOMAIN']}/api/v1/decisions?currentPage=#{params['currentPage']}"
-    make_api_request(api_url, :get)
   end
 
   private

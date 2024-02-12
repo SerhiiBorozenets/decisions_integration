@@ -1,10 +1,11 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
 
-$red-violet:      #6A1B9A ;
+$red-violet: #6A1B9A;
+$lilly: #E6E6FA;
 
 body {
-  background: #E6E6FA;
+  background: $lilly;
   font-family: Raleway;
 }
 
@@ -37,15 +38,12 @@ input {
   -webkit-appearance: none;
 }
 
-
-
 .tab input:focus{
-  border:1px solid #6a1b9a !important;
+  border:1px solid $red-violet !important;
   outline: none;
 }
 
 input.invalid {
-
   border:1px solid #e03a0666;
 }
 
@@ -54,10 +52,10 @@ input.invalid {
 }
 
 button {
-  background-color: #6A1B9A;
+  background-color: $red-violet;
   color: #ffffff;
   border: none;
-  border-radius: 50%;
+  border-radius: 8px;
   padding: 10px 20px;
   font-size: 17px;
   font-family: Raleway;
@@ -69,7 +67,6 @@ button:hover {
 }
 
 button:focus{
-
   outline: none !important;
 }
 
@@ -77,49 +74,19 @@ button:focus{
   background-color: #bbbbbb
 }
 
-
-.all-steps{
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 100%;
+.rbt-close-content {
+  display: none;
+}
+.rbt-token.rbt-token-removeable {
   display: inline-flex;
-  justify-content: center;
+  background: $lilly;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 0 10px;
 }
-
-.step {
-  height: 40px;
-  width: 40px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  color: #6a1b9a;
-  opacity: 0.5;
-}
-
-.step.active {
-  opacity: 1
-}
-
-
-.step.finish {
-  color: #fff;
-  background: #6a1b9a;
-  opacity: 1;
-
-}
-
-.all-steps {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px
-}
-
-.thanks-message {
-  display: none
+.rbt-token-remove-button {
+  text-align: right;
+  font-size: 10px;
+  align-self: center;
+  margin-left: 5px;
 }

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export function isEmptyStr(str) {
-  return isBlank(str) || str.trim() === '';
+  return isBlank(str) || (typeof str === 'string' && str.trim() === '');
 }
 
 export function isBlank(obj) {
