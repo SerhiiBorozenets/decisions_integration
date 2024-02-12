@@ -12,7 +12,6 @@ The Cloverpop Decisions Integration App is built on:
 ---
 
 ## Table of Contents
-- [General Info](#welcome-to-the-vibe-report-app)
 - [Setup](#setup)
 - [Methods](#methods)
 - [Usage](#usage)
@@ -20,10 +19,6 @@ The Cloverpop Decisions Integration App is built on:
 - [Security](#security)
 - [New Development Machine Install (Mac)](#new-development-machine-install-mac)
 - [GIT and Changing Code](#git)
-- [Code Submissions and Reviews](#code-submissions-and-reviews)
-- [Start Rails server](#start-rails-server)
-- [OpenSSL::Cipher::CipherError](#opensslcipherciphererror)
-- [How to Add Your Own Logo and Favicon to the Vibe Report App](#how-to-add-your-own-logo-and-favicon-to-the-vibe-report-app)
 - [License](#license)
 
 ---
@@ -74,10 +69,6 @@ Ensure that sensitive information such as API tokens (`CLOVERPOP_ORG_API_TOKEN`)
 [...instructions continue...]
 
 ## GIT
-
-[...instructions continue...]
-
-## How to Add Your Own Logo and Favicon to the Vibe Report App
 
 [...instructions continue...]
 
