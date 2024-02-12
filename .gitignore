@@ -62,3 +62,4 @@ yarn-debug.log*
 /config/credentials/development.key
 /tmp/
 /storage/
+/vendor/
